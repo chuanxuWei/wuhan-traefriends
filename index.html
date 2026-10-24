@@ -1,0 +1,138 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#f7f0df" />
+    <meta name="description" content="选好周末的心情，找到同频的出逃搭子。" />
+    <title>周末出逃搭子配对器</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Ma+Shan+Zheng&family=Noto+Sans+SC:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <div class="paper-noise" aria-hidden="true"></div>
+    <header class="site-header">
+      <a class="brand" href="#top" aria-label="周末出逃首页">
+        <span class="brand-mark">✳</span><span>走吧<span class="brand-dot">.</span></span>
+      </a>
+      <div class="header-note"><span class="small-star">✦</span> 把周末还给自己 <span class="small-star">✦</span></div>
+      <a class="header-link" href="#browse">找出逃搭子 <span aria-hidden="true">↗</span></a>
+    </header>
+    <div id="runtime-notice" class="runtime-notice" hidden>你正在查看静态文件。真实发布和配对需要运行服务：在项目目录执行 <code>npm start</code>，然后打开 <a href="http://127.0.0.1:4173">http://127.0.0.1:4173 ↗</a></div>
+
+    <main id="top">
+      <section class="hero" aria-labelledby="hero-title">
+        <div class="hero-copy">
+          <div class="eyebrow"><span class="eyebrow-line"></span> WEEKEND ESCAPE CLUB · VOL. 01</div>
+          <h1 id="hero-title">周末，<br /><span class="title-escape">出逃</span>一下<span class="title-mark">!</span></h1>
+          <p class="hero-lead">工作日是同事，周末做自己。<br />发布真实出逃计划，找到<span class="underlined">同城搭子</span>。双向同意后再交换联系方式，一起去看看别处的风。</p>
+          <a class="hero-cta" href="#matcher"><span>发布我的出逃卡</span><span class="cta-arrow">↗</span></a>
+          <p class="hero-footnote">真实报名 · 双向同意 · 联系方式不公开</p>
+        </div>
+
+        <div class="hero-art" aria-label="手绘行李箱、太阳和周末出逃路线插画" role="img">
+          <span class="art-stamp">LET'S<br />GO!</span>
+          <svg viewBox="0 0 650 550" class="hero-svg" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+            <path class="route" d="M79 436 C 13 353, 127 300, 199 362 S 320 479, 366 382 S 499 393, 567 254" fill="none" stroke="#315b50" stroke-width="3" stroke-dasharray="9 13" stroke-linecap="round"/>
+            <path d="M67 433 l-7-11 m7 11 12-4" fill="none" stroke="#315b50" stroke-width="3" stroke-linecap="round"/>
+            <circle cx="517" cy="104" r="56" fill="#f5be40" stroke="#263e37" stroke-width="4"/>
+            <g stroke="#263e37" stroke-width="4" stroke-linecap="round"><path d="M518 22v-16M518 202v-17M435 104h-17M617 104h-17M459 44l-12-12M585 166l13 13M577 43l12-12M455 166l-12 12"/></g>
+            <path d="M492 98q8-8 17 0m25 0q8-8 17 0m-42 25q15 17 31-1" fill="none" stroke="#263e37" stroke-width="3" stroke-linecap="round"/>
+            <g transform="rotate(-8 320 288)">
+              <path d="M221 151q-4-21 17-25h51v-22q0-16 17-16h38q16 0 16 16v22h51q24 2 24 25v269q0 24-24 24H238q-22 0-22-24z" fill="#ed6b4f" stroke="#263e37" stroke-width="5" stroke-linejoin="round"/>
+              <path d="M303 126v-18h41v18" fill="none" stroke="#263e37" stroke-width="5" stroke-linejoin="round"/>
+              <path d="M250 161v252m151-252v252" stroke="#263e37" stroke-width="4" stroke-linecap="round"/>
+              <path d="M215 194q104 38 221-1" fill="none" stroke="#263e37" stroke-width="4"/>
+              <path d="M217 364q100-24 219 0" fill="none" stroke="#263e37" stroke-width="4"/>
+              <rect x="279" y="229" width="91" height="83" rx="5" fill="#f8edcf" stroke="#263e37" stroke-width="4" transform="rotate(8 324 270)"/>
+              <path d="M298 276l17-21 14 14 15-22 15 35z" fill="#82a997" stroke="#263e37" stroke-width="3" stroke-linejoin="round"/>
+              <circle cx="339" cy="247" r="5" fill="#f5be40"/>
+              <path d="M236 443v17m178-17v17" stroke="#263e37" stroke-width="8" stroke-linecap="round"/>
+            </g>
+            <path d="M87 139l12 16 21-8-10 20 13 15-23-2-9 20-3-23-22-5 20-11z" fill="#f5be40" stroke="#263e37" stroke-width="3" stroke-linejoin="round"/>
+            <path d="M115 255q22-24 46 0m-38 19q16-13 31 0" fill="none" stroke="#315b50" stroke-width="3" stroke-linecap="round"/>
+            <path d="M500 336q25-24 50 0m-41 21q17-13 35 0" fill="none" stroke="#315b50" stroke-width="3" stroke-linecap="round"/>
+            <path d="M112 77q40-38 90-24" fill="none" stroke="#ed6b4f" stroke-width="4" stroke-linecap="round"/>
+            <path d="M565 436q24-24 47-8" fill="none" stroke="#ed6b4f" stroke-width="4" stroke-linecap="round"/>
+          </svg>
+          <span class="art-label label-one">逃离待办清单 ↗</span>
+          <span class="art-label label-two">下一站：好心情</span>
+        </div>
+        <div class="hero-bottom" aria-hidden="true"><span>↓ 往下滑，发布你的出逃卡</span><span>01 / 02</span></div>
+      </section>
+
+      <section class="how-section" aria-label="使用流程">
+        <div class="how-item"><span>01 / 发布</span><strong>写下你的周末计划</strong><p>去哪、哪天、花多少，留下联系渠道。</p></div>
+        <div class="how-item"><span>02 / 找人</span><strong>翻翻同城出逃卡</strong><p>按城市与玩法筛选，向心动的人发意向。</p></div>
+        <div class="how-item"><span>03 / 成行</span><strong>双方点头再联系</strong><p>互相同意后才显示社媒或微信账号。</p></div>
+      </section>
+
+      <section class="matcher-section" id="matcher" aria-labelledby="matcher-title">
+        <div class="section-heading"><div><span class="section-kicker">MAKE A REAL PLAN</span><h2 id="matcher-title">发布一张<span class="highlight">出逃卡</span></h2></div><div class="heading-doodle" aria-hidden="true">✳<span>约人出发！</span></div></div>
+        <p class="section-intro">把你真正想去的地方写下来，让同城的人找到你。已有卡片？<a href="#my-card" class="text-link">查看我的卡片 ↗</a></p>
+        <form id="publish-form" class="match-form">
+          <div class="form-row info-row">
+            <label class="field">怎么称呼你 <input name="nickname" maxlength="18" required placeholder="比如：小周" autocomplete="nickname" /></label>
+            <label class="field">从哪个城市出发 <input name="city" maxlength="30" required placeholder="比如：武汉" /></label>
+          </div>
+          <div class="form-row info-row">
+            <label class="field">想去哪里 / 做什么 <input name="destination" maxlength="45" required placeholder="比如：东湖骑行 / 江边看日落" /></label>
+            <label class="field">计划哪天去 <input name="date" type="date" required /></label>
+          </div>
+          <label class="field field-full">大概几点出发 <input name="time" maxlength="20" required placeholder="比如：周六 09:00 / 午饭后" /></label>
+          <fieldset class="question-block"><legend><span class="question-number">01</span> 这次出逃的主题</legend>
+            <div class="choice-grid vibe-grid">
+              <label class="choice-card"><input type="radio" name="vibe" value="nature" checked /><span class="choice-icon">☘</span><span class="choice-name">去野一下</span><span class="choice-desc">山风、草地、好空气</span><span class="choice-check">✓</span></label>
+              <label class="choice-card"><input type="radio" name="vibe" value="city" /><span class="choice-icon">✧</span><span class="choice-name">城市乱逛</span><span class="choice-desc">街角小店与新鲜事</span><span class="choice-check">✓</span></label>
+              <label class="choice-card"><input type="radio" name="vibe" value="food" /><span class="choice-icon">◡</span><span class="choice-name">吃喝优先</span><span class="choice-desc">为了那一口出发</span><span class="choice-check">✓</span></label>
+              <label class="choice-card"><input type="radio" name="vibe" value="chill" /><span class="choice-icon">☼</span><span class="choice-name">慢慢放空</span><span class="choice-desc">不赶时间，不做计划</span><span class="choice-check">✓</span></label>
+            </div>
+          </fieldset>
+          <div class="form-row preference-row">
+            <fieldset class="question-block"><legend><span class="question-number">02</span> 你的出行节奏</legend><div class="pill-group">
+              <label class="pill"><input type="radio" name="pace" value="early" checked /><span>🌞 早起出发</span></label><label class="pill"><input type="radio" name="pace" value="flex" /><span>🍃 随缘走走</span></label><label class="pill"><input type="radio" name="pace" value="late" /><span>🌙 睡饱再走</span></label>
+            </div></fieldset>
+            <fieldset class="question-block"><legend><span class="question-number">03</span> 人均预算</legend><div class="pill-group">
+              <label class="pill"><input type="radio" name="budget" value="low" checked /><span>¥ 200 以内</span></label><label class="pill"><input type="radio" name="budget" value="medium" /><span>¥¥ 200–500</span></label><label class="pill"><input type="radio" name="budget" value="high" /><span>¥¥¥ 500 以上</span></label>
+            </div></fieldset>
+          </div>
+          <label class="field field-full">和未来搭子说点什么 <textarea name="intro" maxlength="240" minlength="10" required placeholder="比如：想找一位能边骑边聊天的搭子，路线好商量，新手也完全可以～"></textarea><small>10–240 字。请勿在这里公开微信号、电话或住址。</small></label>
+          <div class="form-row info-row contact-row">
+            <label class="field">联系平台 <select name="contactType" required><option value="wechat">微信</option><option value="xiaohongshu">小红书</option><option value="douyin">抖音</option><option value="qq">QQ</option><option value="other">其他社媒</option></select></label>
+            <label class="field">账号 / ID <input name="contact" maxlength="80" required placeholder="仅双方同意后可见" autocomplete="off" /></label>
+          </div>
+          <label class="consent"><input type="checkbox" name="consent" required /><span>我同意：卡片内容公开展示；联系方式仅在双方同意同行后互相可见。我可以随时关闭或删除卡片。</span></label>
+          <div class="form-footer"><span class="form-aside">建议先约白天的公共场所，不提前转账。本站不核验身份，请自行确认同行安排。</span><button type="submit" class="match-button">发布我的出逃卡 <span>↗</span></button></div>
+          <p id="publish-status" class="inline-status" role="status"></p>
+        </form>
+      </section>
+
+      <section class="browse-section" id="browse" aria-labelledby="browse-title">
+        <div class="section-heading"><div><span class="section-kicker">FIND YOUR PEOPLE</span><h2 id="browse-title">同城<span class="highlight">出逃墙</span></h2></div><span class="wall-scribble" aria-hidden="true">一起去吧 ↘</span></div>
+        <p class="section-intro">真实用户发布的计划会出现在这里。看中一张卡，发送同行意向即可。</p>
+        <form id="filter-form" class="filter-bar"><label>出发城市 <input name="city" placeholder="输入城市" aria-label="筛选城市" /></label><label>出逃主题 <select name="vibe" aria-label="筛选主题"><option value="">全部主题</option><option value="nature">去野一下</option><option value="city">城市乱逛</option><option value="food">吃喝优先</option><option value="chill">慢慢放空</option></select></label><button type="submit" class="secondary-button">找搭子 ↗</button><button type="button" id="clear-filter" class="plain-button">清除筛选</button></form>
+        <div id="card-count" class="wall-count" aria-live="polite"></div>
+        <div id="card-list" class="card-list"></div>
+        <p id="browse-status" class="inline-status" role="status"></p>
+      </section>
+
+      <section class="my-section" id="my-card" aria-labelledby="my-title">
+        <div class="section-heading"><div><span class="section-kicker">YOUR LITTLE CORNER</span><h2 id="my-title">我的<span class="highlight">出逃角落</span></h2></div></div>
+        <p class="section-intro">管理你的卡片，查看谁想同行，以及互相同意后的联系方式。</p>
+        <div id="my-empty" class="my-empty"><div class="empty-doodle">✳</div><strong>还没有你的出逃卡</strong><p>发布后可以在这里查看意向和管理卡片。换了浏览器，可用管理口令找回。</p><div class="recover-row"><input id="recover-token" placeholder="粘贴 64 位管理口令" aria-label="管理口令" /><button id="recover-button" type="button" class="secondary-button">找回卡片</button></div></div>
+        <div id="my-dashboard" hidden>
+          <div id="my-summary" class="my-summary"></div>
+          <div class="dashboard-actions"><button type="button" id="copy-post" class="copy-button">复制社媒招募文案 ↗</button><button type="button" id="copy-share" class="secondary-button">复制分享链接 ↗</button><button type="button" id="copy-token" class="secondary-button">备份管理口令 ↗</button><button type="button" id="close-card" class="plain-button">停止招募</button><button type="button" id="delete-card" class="danger-button">删除卡片与联系信息</button></div>
+          <div class="interest-columns"><div><h3>想与你同行 <span id="incoming-count"></span></h3><div id="incoming-list"></div></div><div><h3>我想同行 <span id="outgoing-count"></span></h3><div id="outgoing-list"></div></div></div>
+        </div>
+        <p id="my-status" class="inline-status" role="status"></p>
+      </section>
+
+      <section class="closing-note"><span aria-hidden="true">✻</span><p>世界很大，周末很短。<br /><strong>和对的人，去吹对的风。</strong></p><span aria-hidden="true">✻</span></section>
+    </main>
+    <footer><span>© WEEKEND ESCAPE CLUB</span><span>出走一下，回来更有劲。</span><a href="#top">回到顶部 ↑</a></footer>
+    <script src="./script.js"></script>
+  </body>
+</html>

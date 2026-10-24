@@ -1,0 +1,13 @@
+{
+  "name": "weekend-escape-matcher",
+  "version": "1.0.0",
+  "private": true,
+  "description": "周末出逃搭子配对器：真实出逃卡、双向意向与联系方式交换",
+  "scripts": {
+    "start": "node server.js",
+    "test": "node --test test/*.test.js"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}
